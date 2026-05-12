@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instant Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background-circle circle1"></div>
+    <div class="background-circle circle2"></div>
+
+    <div class="container">
+
+        <div class="top">
+
+            <div class="weather-icon">
+             
+            </div>
+
+            <h1>
+                Instant Weather
+            </h1>
+
+            <p class="subtitle">
+                Découvrez la météo instantanément
+            </p>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="postalCode">
+               Code postal
+            </label>
+
+            <input
+            type="text"
+            id="postalCode"
+            placeholder="Ex : 14000"
+            maxlength="5">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="citySelect">
+               Commune
+            </label>
+
+            <select id="citySelect">
+
+                <option>
+                    Choisir une commune
+                </option>
+
+            </select>
+
+        </div>
+
+        <button id="searchBtn">
+            Rechercher
+        </button>
+
+        <div id="result">
+
+            <div class="weather-card">
+
+                <h2>
+                     Météo
+                </h2>
+
+                <div class="info">
+
+                    <span>Température min</span>
+                    <strong>-- °C</strong>
+
+                </div>
+
+                <div class="info">
+
+                    <span> Température max</span>
+                    <strong>-- °C</strong>
+
+                </div>
+
+                <div class="info">
+
+                    <span>Probabilité pluie</span>
+                    <strong>-- %</strong>
+
+                </div>
+
+                <div class="info">
+
+                    <span>Ensoleillement</span>
+                    <strong>-- h</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
