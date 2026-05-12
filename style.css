@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial, sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #1e3c72,
+    #2a5298,
+    #74ebd5
+    );
+
+    overflow:hidden;
+}
+
+.container{
+
+    width:420px;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+
+    color:white;
+
+    animation:fade 1s ease;
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:30px;
+
+    color:white;
+
+}
+
+.weather-icon{
+
+    text-align:center;
+
+    font-size:70px;
+
+    margin-bottom:15px;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    margin-top:15px;
+
+    font-size:15px;
+
+}
+
+input,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.2);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    margin-bottom:15px;
+
+}
+
+input::placeholder{
+
+    color:#eee;
+
+}
+
+select option{
+
+    color:black;
+
+}
+
+input:focus,
+select:focus{
+
+    border:2px solid white;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    color:#1e3c72;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.03);
+
+    background:#dbeafe;
+
+}
+
+#result{
+
+    margin-top:25px;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.15);
+
+}
+
+#result h2{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+
+}
+
+#result p{
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+}
+
+@media screen and (max-width:500px){
+
+    .container{
+
+        width:90%;
+
+        padding:25px;
+
+    }
+
+}

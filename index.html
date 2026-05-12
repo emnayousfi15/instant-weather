@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instant Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-icon">
+           
+        </div>
+
+        <h1>Instant Weather</h1>
+
+        <label for="postalCode">
+             Code postal
+        </label>
+
+        <input
+        type="text"
+        id="postalCode"
+        placeholder="Ex : 14000"
+        maxlength="5">
+
+        <label for="citySelect">
+             Commune
+        </label>
+
+        <select id="citySelect">
+
+            <option>
+                Choisir une commune
+            </option>
+
+        </select>
+
+        <button id="searchBtn">
+             Rechercher
+        </button>
+
+        <div id="result">
+
+            <h2> Météo</h2>
+
+            <p> Température min : --</p>
+
+            <p> Température max : --</p>
+
+            <p> Probabilité de pluie : --</p>
+
+            <p> Ensoleillement : --</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
